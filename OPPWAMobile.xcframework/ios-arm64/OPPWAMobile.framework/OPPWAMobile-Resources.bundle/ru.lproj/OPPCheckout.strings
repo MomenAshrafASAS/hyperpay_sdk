@@ -105,6 +105,9 @@
 "PAYMENT_METHOD_GROUP_OTHER" = "Другие способы оплаты";
 "PAYMENT_METHOD_GROUP_CARDS" = "Кредитные / дебетовые карты";
 
+/// Payment method names
+"PAYMENT_METHOD_TYPE_YANDEX" = "Яндекс.Деньги";
+
 /// Copy and Pay WebView
 "FIELD_PLACEHOLDER_EXPIRY_DATE_WEB" = "Использовать формат ММ/ГГ";
 "FIELD_PLACEHOLDER_CVV_WEB" = "Используйте 3-х или 4-х значный код";

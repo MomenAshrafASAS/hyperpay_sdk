@@ -10,8 +10,6 @@
 @class Warning;
 @class OPPCheckoutData;
 @class OPPBrandInfo;
-@class OPPInstallmentPlanParams;
-@class OPPInstallmentPlanResponse;
 
 /// An enumeration for the various provider modes.
 typedef NS_ENUM(NSInteger, OPPProviderMode) {
@@ -187,13 +185,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)isDeviceAuthenticationAvailable;
 
 /**
- * Returns the list of FPX banks as a dictionary.
- * Key from the dictionary will be banks display name and bank name will be value for that key.
- * @return A dictionary of FPX payment bank names where key will be banks display name and its value will be bank name.
- */
-+ (NSDictionary<NSString *, NSString *> * _Nonnull)getFPXBanks;
-
-/**
  Requests a Apple's  recurring payments tokenId.
  
  @param checkoutID The checkout ID of a transaction.
@@ -223,11 +214,5 @@ NS_ASSUME_NONNULL_BEGIN
                    transaction:(nonnull OPPTransaction *)transaction
              completionHandler:(void (^)(OPPTransaction * _Nonnull transaction,
                                          NSError * _Nullable error))completionHandler;
-
-/// :nodoc:
-- (void)getVisaInstallmentPlans:(nonnull OPPInstallmentPlanParams *)planParams
-              completionHandler:(void (^)(OPPInstallmentPlanResponse * _Nullable response,
-                                          NSError * _Nullable error))completionHandler;
-
 @end
 NS_ASSUME_NONNULL_END
