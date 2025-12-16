@@ -1,7 +1,7 @@
 //  © Copyright ACI Worldwide, Inc. 2018, 2025
 
 #import <Foundation/Foundation.h>
-#import "OPPTransaction.h"
+@class OPPTransaction;
 
 /**
  Completion block for Cash App Pay payment processing.
