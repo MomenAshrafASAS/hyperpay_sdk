@@ -2,7 +2,6 @@
 
 #import <Foundation/Foundation.h>
 #import <PassKit/PassKit.h>
-#import "OPPBillingAddress.h"
 #import "OPPViewController.h"
 @class OPPBrandConfig;
 @class OPPCheckoutTheme;
@@ -12,6 +11,7 @@
 @class OPPMBWayConfig;
 @class OPPAfterpayConfig;
 @class OPPAmazonPayConfig;
+@class OPPBillingAddress;
 
 /// An enumeration for the possible store payment details modes.
 typedef NS_ENUM(NSInteger, OPPCheckoutStorePaymentDetailsMode) {

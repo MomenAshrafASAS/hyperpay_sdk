@@ -2,7 +2,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIkit/UIkit.h>
-#import "OPPToken.h"
+
+@class OPPToken;
 
 NS_ASSUME_NONNULL_BEGIN
 
